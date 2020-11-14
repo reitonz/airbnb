@@ -1,0 +1,760 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: rgb(53, 53, 53);
+}
+.container {
+    margin: 0 auto;
+    width: 75%;
+}
+.border {
+    width: 8%;
+    margin: 0 auto;
+    border-bottom: 2px solid grey;
+}
+.clear {
+    clear: both;
+}
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0;
+}
+.aqua-color{
+    color: rgb(92, 184, 153);
+}
+.top2-box {
+    display: none;
+}
+/* Header */
+#header2 {
+    display: none;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+    z-index: 100;
+}
+    .header-top {
+        display: flex;
+    }
+    .header-icon {
+        width: 70px;
+        height: 70px;
+        background-color: turquoise;
+        margin: 10px 10px 0;
+    }
+    .header-ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+        .header-ul ul {
+            display: flex;
+        }
+        .header-ul li {
+            padding: 0px 15px;
+            height: 85px;
+            line-height: 85px;
+            font-size: 13px;
+            color: rgb(53, 53, 53);
+        }
+        .header-ul a:hover {
+            text-decoration: underline;
+        }
+        .header-ul li:active {
+            border-bottom: 2px solid turquoise;
+            color: turquoise;
+        }
+    .header-button {
+        width: 10%;
+        margin: 0 auto;
+    }
+        .header-button a{
+            display: inline-block;
+            padding: 10px;
+            margin: 20px 0; 
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+
+/* Main-img */
+
+.main-img {
+    background-image: url(img/cropyuzu20122056.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 620px;
+    position: relative;
+}
+    .img-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .img-box {
+        width: 29%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: white;
+        position: absolute;
+        top: 130px;
+        right: 10%;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="text"], #people-select, #room-select, #room-select-2, #people-select-2 {
+        height: 40px;
+    }
+    #people-select, #room-select {
+        margin-top: 15px;
+    }
+    #room-select,  #room-select-2{
+        width: 60%;
+        margin-right: 10px;
+    }
+    #people-select, #people-select-2 {
+        width: 35%;
+    }
+
+    .zero-text {
+        display: none;
+    }
+    
+/* Main */
+ 
+#main {
+    color: rgb(124, 124, 124);
+}
+    .first-text {
+        width: 100%;
+        margin: 50px 0;
+    }
+        .first-left {
+            width: 50%;
+            padding-right: 3%;
+            float: left;
+        }
+        .first-right {
+            width: 50%;
+            float: right;
+        }
+
+/* First end */
+
+        .second-text {
+            margin: 100px 0;
+        }
+        .second-boxes {
+            display: flex;
+        }
+        .second-box::before {
+            content: "✔️";
+            text-align: center;
+            display: block;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+        .second-box {
+            color: rgb(124, 124, 124);
+            width: 30%;
+            margin: 0 auto;
+        }
+
+/* Second end */
+
+        .third-text {
+            display: flex;
+            color: rgb(124, 124, 124);
+        }
+            .third-left {
+                width: 50%;
+                margin: 0 auto;
+                padding-right: 8%;
+            }
+                .third-left-text{
+                    font-size: 35px;
+                    margin: 0em;
+                    line-height: 40px;
+                }
+                .t-l-t{
+                    color: orange;
+                    font-size: 100px;
+                    margin: 0;
+                    height: 80px;
+                }
+                .third-left small {
+                    font-size: 15px;
+                    display: block;
+                }
+                .text-button {
+                    margin-top: 15px;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: 2px solid black;
+                    color: rgb(53, 53, 53);
+                    display: inline-block;
+                }
+                .text-button:hover {
+                    text-decoration: none;
+                }
+            .third-right {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+/* Third end */
+
+
+    .force-text {
+        margin: 100px 0;
+    }
+    .force-boxes {
+        display: flex;
+    }
+        .force-left, .force-right {
+            width: 45%;
+            margin: 0 auto;
+        }
+        .force-left {
+            line-height: 35px;
+        }
+        .text-last {
+            color: cornflowerblue;
+        }
+        .force-right li {
+            padding:0 0 30px 0;
+        }
+        .force-right li::before {
+            content: "✔︎";
+            color: cornflowerblue;
+            margin-right: 20px;
+        }
+        .force-img {
+            margin: 120px 0;
+        }
+
+/* Force end */
+
+    .fifth-boxes {
+        display: flex;
+    }
+        .fifth-box {
+            width: 32%;
+            margin: 0 auto;
+            padding: 0px 1%;
+        }
+
+/* Fifth end */
+
+.six-text {
+    display: flex;
+    margin: 120px 0;
+}
+    .six-left {
+        width: 50%;
+        margin: 0 auto;
+        padding-left: 7%;
+    }
+
+/* Six end */
+
+    .seven-boxes {
+        display: flex;
+    }
+    .seven-box {
+        width: 33%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .seven-box p {
+        font-size: 50px;
+        color: rgb(51, 51, 49);
+        margin: 0vmax;
+    }
+
+/* Seven end */
+
+.eight-text {
+    margin: 150px 0;
+}
+    .eight-left {
+        width: 45%;
+        float: left;
+    }
+    .eight-right {
+        width: 45%;
+        float: right;
+    }
+
+/* Eight end */
+
+.nine-boxes {
+    display: flex;
+}
+    .nine-boxes ul {
+        width: 50%;
+        margin: 0 2%;
+    }
+    .nine-boxes li {
+        font-size: 17px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.247);    }
+
+/* Nine end */
+
+.ten-text {
+    margin: 100px 0;
+}
+.ten-boxes {
+    display: flex;
+}
+.box-a .ten-box {
+    text-decoration: none;
+    margin: 0 5%;
+}
+    h4 {
+        margin-bottom: 0;
+    }
+    .box-a .ten-box  small {
+        display: block;
+        color: rgb(51, 51, 49);
+    }
+    .box-a .ten-box .ten-box-help {
+        color: turquoise;
+    }
+    .ten-box-help:hover , .box-a:hover{
+        text-decoration: none;
+    }
+
+/* Ten end */
+
+.eleven-text {
+    background-image: url(img/SIKUN190317015_0_TP_V.jpg);
+    background-size: cover;
+    padding: 40px 0;
+    width: 85%;
+    margin: 100px auto;
+}
+    .eleven-box {
+        width: 38%;
+        margin-left: 5%;
+    }
+    .eleven-text h1 {
+        font-size: 50px;
+    }
+    .eleven-text a {
+        background-color: white;
+        color: black;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+/* Main end */
+
+#footer {
+    background-color: rgb(228, 227, 227);
+    border-top: 1px solid rgba(128, 128, 128, 0.247);
+    padding: 50px 0 0; 
+} 
+    .footer-boxes {
+        width: 85%;
+        margin: 0 auto 50px;
+        display: flex;
+
+    }
+    .footer-box {
+        width: 25%;
+        margin: 0 auto;
+    }
+        h6 {
+            margin: 0;
+            font-size: 14px;
+        }
+        .footer-box a li {
+            color: rgb(51, 51, 49);
+            line-height: 40px;
+            font-size: 14px;
+        }
+    
+    .footer-last {
+        width: 85%;
+        margin: 0 auto;
+        border-top: 1px solid rgba(128, 128, 128, 0.247);
+        padding: 50px 0;
+    }
+        .last-left {
+            float: left;
+        }
+        .last-right {
+            float: right;
+            width: 30%;
+        }
+            .underline {
+                text-decoration: underline;
+            }
+            .fa-facebook, .fa-twitter, .fa-instagram {
+                display: inline-block;
+                font-size: 20px;
+                margin: 0 5%;
+            }
+
+
+            @media screen and (max-width: 960px) {
+                
+                #header2 {
+                    position: fixed;
+                    width: 100%;
+                    height: 85px;
+                    background-color: white;
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+                    z-index: 1000;
+                    display: none;
+                    transition : all 1500ms;
+                }
+                .active{
+                    opacity : 1;
+                    transform : translate(0, 0);
+                  }
+
+                .sub-title {
+                    text-align: center;
+                    font-size: 40px;
+                    margin-top: 0;
+                }
+
+                #header {
+                    display: none;
+                }
+                .header-top2 {
+                    width: 100%;
+                    height: 500px;
+                    background-image: url(img/cropyuzu20122056.jpg);
+                    background-size: cover;
+                }
+                .header-icon2 {
+                    width: 70px;
+                    height: 70px;
+                    background-color: turquoise;
+                    margin: 0 10px 0;
+                }
+                .top2-box {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: block;
+                }
+                .top2-box h1 {
+                    color: white;
+                    font-size: 40px;
+                    margin-top: 300px;
+                }
+                .main-img {
+                    display: none;
+                }
+                .zero-text {
+                    display: block;
+                }
+                #room-select-2, #people-select-2 {
+                    margin-top: 10px;
+                }
+                .header-button {
+                    width: 100%;
+                }
+                    .header-button a {
+                        display: block;
+                        text-align: center;
+                    }
+
+                .first-left, .first-right {
+                    width: 100%;
+                }
+
+                .second-boxes {
+                    display: block;
+                }
+                    .second-box {
+                        width: 100%;
+                    }
+                
+            .third-left-text {
+                font-size: 20px;
+                margin: 0em;
+                line-height: 30px;
+            }
+            .third-left small {
+                margin-top: 10px;
+                font-size: 12px;
+                display: block;
+            }
+
+            .force-boxes {
+                display: block;
+            }
+
+            .force-left, .force-right {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .fifth-boxes {
+                display: block;
+            }
+            .fifth-box {
+                width: 100%;
+                margin: 0 auto;
+                padding: 0px;
+            }
+
+            .seven-box p {
+                font-size: 35px;
+                color: rgb(51, 51, 49);
+                margin: 0vmax;
+            }
+
+            .eight-left, .eight-right {
+                width: 100%;
+            }
+
+            .nine-boxes {
+                display: block;
+            }
+            .nine-boxes ul {
+                width: 100%;
+                margin: 0;
+            }
+            .box-a .ten-box {
+                text-decoration: none;
+                margin: 0 5%;
+                padding: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.151);
+                box-shadow: 0px 2px rgba(128, 128, 128, 0.164);
+            }
+            .eleven-text {
+                background-image: url(img/SIKUN190317015_0_TP_V.jpg);
+                background-size: cover;
+                padding: 40px 0;
+                width: 100%;
+                margin: 100px auto;
+            }
+            .eleven-box {
+                width: 50%;
+                margin-left: 5%;
+            }
+            .footer-boxes {
+                width: 85%;
+                margin: 0 auto 50px;
+                display: block;
+            }
+            .footer-box {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .footer-box ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .footer-box a li {
+                color: rgb(51, 51, 49);
+                line-height: 35px;
+                font-size: 15px;
+                padding-right: 65px;
+            }
+            .footer-last {
+                width: 85%;
+                margin: 0 auto;
+                border-top: 1px solid rgba(128, 128, 128, 0.247);
+                padding: 50px 0;
+                display: flex;
+                flex-wrap: wrap-reverse;
+                text-align: center;
+            }
+            .last-right {
+                float: right;
+                width: 100%;
+            }
+
+            .footer-button {
+                width: 100%;
+                position: fixed;
+                z-index: 1000;
+                bottom: 0;
+                height: 85px;
+                background-color: white;
+                display: none;
+            }
+            .header-button-2 {
+                width: 15%;
+                margin: 0 auto;
+                float: right;
+            }
+            .header-button-2 a{
+                display: inline-block;
+                padding: 10px;
+                margin: 20px 0; 
+                background-color: red;
+                color: white;
+                border-radius: 5px;
+            }
+            .footer-box {
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 20px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid gray;
+            }
+
+        }
+
+         
+            
+            
+
+            @media screen and (max-width: 560px) {
+                
+                .container {
+                    margin: 0 auto;
+                    width: 85%;
+                }
+                .sub-title {
+                    text-align: left;
+                    font-size: 36px;
+                }
+                .header-top2 {
+                    width: 100%;
+                    height: 300px;
+                    background-image: url(img/cropyuzu20122056.jpg);
+                    background-size: cover;
+                }
+                .top2-box h1 {
+                    color: white;
+                    font-size: 28px;
+                    margin-top: 110px;
+                }
+                #room-select-2, #people-select-2 {
+                    width: 100%;
+                }
+                .second-box::before {
+                    content: "✔️";
+                    text-align: center;
+                    display: block;
+                    width: 35px;
+                    height: 35px;
+                    font-size: 20px;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                }
+                .third-text {
+                    display: flex;
+                    flex-wrap: wrap-reverse;
+                    color: rgb(124, 124, 124);
+                }
+                .third-right , .third-left {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                .six-text {
+                    display: block;
+                    margin: 120px 0;
+                }
+                .six-left {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding-left: 0;
+                }
+                .six-left small {
+                    display: block;
+                }
+                .seven-boxes {
+                    display: block;
+                }
+                .seven-box {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: left;
+                }
+                .ten-boxes {
+                    display: block;
+                }
+                .box-a .ten-box .ten-box-help {
+                    display: none;
+                }
+                .box-a .ten-box {
+                    text-decoration: none;
+                    display: flex;
+                    margin: 10px;
+                    padding: 0;
+                    border: 1px solid rgba(0, 0, 0, 0.151);
+                    box-shadow: 0px 2px rgba(128, 128, 128, 0.164);
+                }
+                .box-a .ten-box img {
+                    width: 20%;
+                }
+                .box-a .ten-box small {
+                    display: block;
+                    padding: 10px 0 0 10px;
+                    color: rgb(51, 51, 49);
+                }
+                    h4 {
+                        padding-left: 10px;
+                        font-size: 14px;
+                    }
+                .eleven-text h1 {
+                    font-size: 30px;
+                }
+                .footer-box ul {
+                    display: block;
+                }
+                .header-button-2 {
+                    width: 25%;
+                    margin: 0 auto;
+                    float: right;
+                }
+                .header-button-2 a {
+                    display: inline-block;
+                    padding: 10px;
+                    margin: 3px 0;
+                    background-color: red;
+                    color: white;
+                    border-radius: 5px;
+                }
+                .footer-button {
+                    width: 100%;
+                    position: fixed;
+                    z-index: 1000;
+                    bottom: 0;
+                    height: 49px;
+                    background-color: white;
+                    display: none;
+                }
+
+             } 
